@@ -1,0 +1,22 @@
+From this directory,
+
+Build the program with:
+sbt package
+
+Run the program with
+scala target/scala-2.11/myproject_2.11-1.0.jar /path/to/your/input/file.txt
+
+The program will store the assignments in:
+/path/to/your/input/file.output
+
+
+Key Assumptions:
+
+-a reservation must be placed in a contiguous block in a row
+-preferences of rows follows a log normal distribution
+-preferences of columns is essentially the more in the middle, the better
+-aisle seats are slightly preferable to non-aisle seats
+-a customer is more satisfied if they have an empty seat next to them
+-a customer does not care if someone with a higher reservation number than
+	themselves who is requesting the same number of seats gets "better" seats
+-the "optimal" solution cannot be obtained, but an estimate will suffice
